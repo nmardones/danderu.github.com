@@ -14,7 +14,6 @@ categories:
 
 Si estás leyendo esto, probablemente sufres en tus carnes cada día la problemática de trabajar con código _legacy_, o código legado. Y digo que la sufres, porque eres consciente del problema, de que tiene solución y no estás cómodo con el status quo actual. Sabes que te deberías librar de ese problema pero, ¿por qué no lo haces? Déjame intentar adivinarlo: porque no puedes.
 
-<!-- more -->
 
 El problema con el _legacy code _está en el nombre. Incluso en la definición de Michael Feathers, que seguro que habrás leído millones de veces:
 
