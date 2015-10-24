@@ -19,8 +19,6 @@ Estoy en mi hotel en el centro de Oslo, son las 18:30 y estoy haciendo tiempo ha
 
 Más tarde, ya en el avión, aproveché esas horas de soledad y tranquilidad que no conseguía desde que nació Emma para comenzar a leer "[The Software Craftsman](http://www.amazon.com/The-Software-Craftsman-Professionalism-Pragmatism/dp/0134052501)", de Sandro Mancuso. Una de las personas más inspiradoras que he tenido el honor de conocer. Y precisamente en este libro, he encontrado verbalizado el sentimiento que me ha llevado a emprender esta aventura.
 
-<!-- more -->
-
 ## Un viaje hacia la madurez profesional
 
 ¿Qué es un programador senior? Tal y como se entiende aún en muchas empresas, el nivel senior para un programador es un status al que se aspira llegar tan solo adquiriendo _antigüedad_. Una etiqueta que te corresponde por hacer tu trabajo bien durante un tiempo determinado. Y transcurrido ese tiempo, pasas a ser automáticamente **senior **(maduro). No obstante, tal y como Mancuso señala en su libro:
