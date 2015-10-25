@@ -33,7 +33,7 @@ En la última actualización de la librería, la **[versión 0.14 beta 1](http:/
 
 El futuro de esta librería cada vez es más apasionante.
 
-##Referencias:
+##Referencias
 
   * [You are missing the point of React](https://medium.com/@dan_abramov/youre-missing-the-point-of-react-a20e34a51e1a) - [@dan_abramov](https://twitter.com/dan_abramov?lang=es)
   * [React 0.14 Beta 1](https://facebook.github.io/react/blog/2015/07/03/react-v0.14-beta-1.html)
