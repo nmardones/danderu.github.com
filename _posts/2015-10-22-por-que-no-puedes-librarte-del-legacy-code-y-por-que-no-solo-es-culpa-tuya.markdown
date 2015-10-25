@@ -1,7 +1,7 @@
 ---
 author: dandel
 comments: true
-date: {}
+date: 2015-10-22T06:37:11.000Z
 layout: post
 slug: "por-que-no-puedes-librarte-del-legacy-code-y-por-que-no-solo-es-culpa-tuya"
 title: Por qué no puedes librarte del legacy code y por qué no (solo) es culpa tuya
@@ -9,7 +9,7 @@ wordpress_id: 187
 categories: 
   - Journey
 published: true
-excerpt: "Si estás leyendo esto, probablemente sufres en tus carnes cada día la problemática de trabajar con código\__legacy_, o código legado. Y digo que la sufres, porque eres consciente del problema, de que tiene solución y no estás cómodo con el status quo actual."
+excerpt: "Si estás leyendo esto, probablemente sufres en tus carnes cada día la problemática de trabajar con código legacy, o código legado. Y digo que la sufres, porque eres consciente del problema, de que tiene solución y no estás cómodo con el status quo actual."
 ---
 
 
@@ -23,7 +23,7 @@ Esta sentencia, tan breve como lapidaria, si se utiliza fuera de contexto puede 
 
 Es fácil llegar a esta conclusión, cuando empiezas a buscar soluciones y lees a gente como Feathers, o Uncle Bob. Este último, al que respeto enormemente, se quedó bien a gusto cuando enunció las tres reglas del TDD:
 
-> 1. You are not allowed to write any production code unless it is to make a failing unit test pass.
+1. You are not allowed to write any production code unless it is to make a failing unit test pass.
 2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
 3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
 
