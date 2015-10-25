@@ -27,37 +27,26 @@ Durante estas semanas hemos ido tomando muchísimas micro decisiones sobre el en
 
 El motivo de este post es describir ese entorno para compartirlo con aquellos que quieran empezar a trabajar con esta tecnología y se pierdan entre el inmenso mar de opciones que proporciona la comunidad de desarrolladores.
 
-<!-- more -->
-
-
 ## Entorno de desarrollo con Webpack
-
 
 ![webpack](https://thecraftsmansjourney.files.wordpress.com/2015/06/webpack.png)
 
 Webpack es la nueva niña bonita de las soluciones de _bundling _para JavaScript, una vez superado el hype de Grunt y Gulp. La verdad es que miro atrás y me doy cuenta de que descartamos estas dos herramientas prácticamente desde el primer día, sin ni siquiera haberles dado una oportunidad. Supongo que el motivo es que los primeros tutoriales que encontramos en la red se basaban en Webpack y una vez aprendimos a configurarlo ya no queríamos otra cosa. Aún así, hubo otras opciones que sí probamos y descartamos:
 
-
 ### Browserify
-
 
 Browserify es una opción que funciona bastante bien manejando módulos CommonJS, pero tiene una cosa que nos tocaba bastante las narices: el [error EMFILE](https://github.com/substack/node-browserify/issues/1003). Aunque tu código tenga cinco líneas, carga una cantidad indecente de archivos solo para compactarlo, incurriendo en este error en máquinas con Mac OS X. Además, no es una solución global que te resuelva el precompilado de SASS o te proporcione un entorno de desarrollo en local con hot reloading, a no ser que la combines con otras soluciones, obligándote a tener demasiadas dependencias.
 
-
 ## npm
-
 
 Hubo un momento en el que estuvimos a punto de tener el entorno de desarrollo configurado solo con scripts de npm, tal y como recomienda [@keithamus](https://twitter.com/keithamus) en un [artículo](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) muy inspirador que publicó en diciembre del año pasado. Sin embargo, vimos que el entorno final (muy cercano al de su ejemplo) tenía dos problemas: por un lado, era lento reflejando los cambios en el navegador, ya que tenía que pasar por varios pasos de preprocesado y escribir en disco el resultado antes de hacer el reload. Por otro lado, el número de dependencias necesario para tener todo funcionando es mayor que el que necesita webpack. Como ventaja, sí he de reconocer que la configuración es mínima y elimina la capa de complejidad introducida por Gulp, Grunt o Webpack.
 
-
 ## Por qué Webpack
-
 
 Webpack permite disponer de un archivo de configuración para especificar el workflow de tareas que se deben realizar antes de empaquetar los módulos requeridos por tu aplicación. Tiene la gran ventaja de ser rapidísimo, al proporcionar el módulo [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html), que levanta un servidor http en local y sirve los archivos js y css compilados desde memoria, sin escribir en disco. Otra gran ventaja si trabajas con React es que te permite usar [react-hot-loader](https://github.com/gaearon/react-hot-loader) (también disponible para browserify), que vigila los cambios a nivel de componente y solo recarga esa parte de la página, haciendo que el proceso de build sea fugaz.
 
 Esta es la configuración de webpack que tenemos actualmente:
 
-    
     var path = require('path');
     var webpack = require('webpack');
     
@@ -96,22 +85,17 @@ Esta es la configuración de webpack que tenemos actualmente:
      ]
     };
 
-
 Como veis, no es demasiado difícil de interpretar lo que hace Webpack en nuestro entorno: levanta un server en local en el puerto 8080, proporciona un path público para los bundles en el path ./dist/ y procesa archivos de distinto tipo con sus loaders correspondientes.
 
 Otra de las ventajas de Webpack es que te permite hacer `require` en tus componentes de cualquier tipo de archivo. De este modo, si en el archivo de configuración dispone del _loader_ adecuado, lo procesará antes de construir el bundle. Por ejemplo, en nuestra configuración, tenemos _loaders _de archivos .jsx de React, .css y .scss. Pero podríamos tener también imágenes y tratarlas con un loader que las redimensione y comprima adecuadamente, por ejemplo.
 
-
 ## ECMAScript 6
-
 
 ![js](https://thecraftsmansjourney.files.wordpress.com/2015/06/js.png)ECMAScript 6 es el nuevo estándar para JavaScript que [se acaba de aprobar ](http://www.ecma-international.org/publications/standards/Ecma-262.htm)en el momento en que escribo estas líneas, así que no podría estar más calentito. Debido a esto, el soporte de [la mayoría de navegadores](https://kangax.github.io/compat-table/es6/) a día de hoy no es muy bueno, pero nosotros llevamos todo este tiempo trabajando con él gracias al uso de [Babel](https://babeljs.io/), un transpiler que traduce el código escrito en ES6 a ES5, que es la versión anterior del estándar y está ampliamente soportada.
 
 Eso nos ha permitido poder estar utilizando desde ya las ventajas del nuevo estándar, como el uso de las palabras reservadas `let` y `const` para declaración de variables, uso de _promises_, clases, decoradores y otras [ventajas de ES6](http://carlosvillu.com/tag/es6/).
 
-
 ## Tests unitarios con mocha y Karma
-
 
 Una de las múltiples ventajas de usar React es que te permite crear componentes de interfaz de usuario atómicos y testeables de forma unitaria. Por eso hemos pensado que era buena idea proporcionar tests unitarios a nivel de componente, de forma que podamos liberar nuevas versiones asegurando que el funcionamiento esperado se mantiene. Cubrir el código con tests automáticos es un paso fundamental para montar un entorno de integración continua.
 
@@ -119,9 +103,7 @@ El framework de testeo elegido ha sido mocha. Facebook está recomendando [Jest]
 
 Como test runner elegimos [Karma](http://karma-runner.github.io/0.12/index.html), ya que se integra muy bien con webpack y hay un buen soporte de la comunidad.
 
-
 ## JS y CSS linting
-
 
 En un equipo en el que trabajan varias personas, es importante que todos se pongan de acuerdo en seguir las mismas reglas de codificación. Desde nombres de variables al tipo de tabulación, espaciado... además de palabras restringidas y otras utilidades.
 
@@ -133,31 +115,24 @@ Todos estos linters permiten indicar las reglas en ficheros específicos. Hemos 
 
 La gran ventaja de estos ficheros es que si utilizas un editor tipo Sublime Text, mediante la instalación de un plugin, tendrás las reglas aplicadas en tiempo de codificación, sin tener que ejecutar la tarea al final. Con esto se reduce el feedback loop a la mínima expresión y un desarrollador nuevo se puede adaptar a las convenciones de codificación de la compañía en cuestión de horas.
 
-
 ## Orquestándolo todo con precommit-hook
-
 
 De nada serviría haber creado todos los tests unitarios de una app hecha en React y todas las reglas de linting para JS y CSS si luego la comunidad de desarrolladores de la compañía no las utiliza.
 
 Por este motivo, hemos decidido utilizar [precommit-hook](https://github.com/nlf/precommit-hook) para GitHub. Añadiendo un sencillo script a la configuración del package.json hacemos que antes de hacer commit, se ejecuten las tareas de linting y tests unitarios:
 
-    
     {
-      <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>your_project<span class="pl-pds">"</span></span>,
-      <span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>just an example<span class="pl-pds">"</span></span>,
-      <span class="pl-s"><span class="pl-pds">"</span>scripts<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
-        <span class="pl-s"><span class="pl-pds">"</span>lint<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>jshint --with --different-options<span class="pl-pds">"</span></span>,
-        <span class="pl-s"><span class="pl-pds">"</span>validate<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>./command/to/run<span class="pl-pds">"</span></span>,
-        <span class="pl-s"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>./other/command<span class="pl-pds">"</span></span>
+      "name": "your_project",
+      "description": "just an example",
+      "scripts": {
+        "lint": "jshint --with --different-options",
+        "validate": "./command/to/run",
+        "test": "./other/command"
       },
-      <span class="pl-s"><span class="pl-pds">"</span>pre-commit<span class="pl-pds">"</span></span><span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">"</span>lint<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>]
+      "pre-commit": ["lint", "test"]
     }
 
-
-
-
-## Recursos
-
+## Referencias
 
 [SurviveJS](http://survivejs.com/): De todos los recursos online que he encontrado para aprender a usar Webpack y React, el más completo con diferencia. Se trata de un libro online que te guía paso a paso explicándote cada línea de configuración detalladamente.
 
