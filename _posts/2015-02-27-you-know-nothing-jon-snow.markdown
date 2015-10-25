@@ -14,11 +14,7 @@ Hoy ha concluido una etapa de mi viaje por Escandinavia, en la que he dejado atr
 
 He intentado ir plasmando hasta ahora todo lo que he aprendido - o casi. Esta mañana mientras esperaba el avión hacia Estocolmo hacía un resumen de toda la información que tengo en mi cabeza. Y me he dado cuenta de que **no sé nada.**
 
-<!-- more -->
-
-
-## Nada, absolutamente _nada_.
-
+## Nada, absolutamente _nada_
 
 El subtítulo de este blog es "un viaje hacia la madurez profesional", porque espero que este viaje signifique un punto de inflexión en mi carrera que me lleve a mejorar en todos los aspectos de mi oficio. No me conformo con lo que soy capaz de hacer hoy, ya que creo que hay mucho camino que debo recorrer. Y después de este viaje, ese techo está mucho más alto.
 
