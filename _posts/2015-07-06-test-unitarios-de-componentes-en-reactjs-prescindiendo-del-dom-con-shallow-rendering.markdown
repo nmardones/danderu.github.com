@@ -17,9 +17,4 @@ published: true
 excerpt: En este post explico cómo implementar tests unitarios sobre tus componentes de UI utilizando shallow rendering.
 ---
 
-
-
-
-##Referencias##
-
-[Unit testing React components without a DOM](http://simonsmith.io/unit-testing-react-components-without-a-dom/), con varios ejemplos más extensos que el que yo he expuesto aquí [@blinkdesign](http://twitter.com/blinkdesign)
+asdf
