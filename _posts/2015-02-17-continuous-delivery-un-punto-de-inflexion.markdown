@@ -22,14 +22,7 @@ Esperaba encontrarme algo muy sofisticado, una forma de trabajar que mi nivel de
 
 Su tablón es de tipo kanban, con varias columnas que reflejan su proceso de trabajo, que es el siguiente:
 
----
-ToDo:
-In Progress:
-Code Review:
-Test:
-Done:
-Production:
----
+|ToDo | In Progress | Code Review | Test | Done | Production |
 
   * **ToDo**: Las historias de usuario entran ya priorizadas en esta columna. Tanto historias de producto como historias de "mantenimiento". Los bugs, siempre entran con la prioridad máxima, arriba de todo. La prioridad es descendiente de arriba a abajo. Más adelante me detendré a hablar de cómo asignan prioridades.
   * **In Progress**: La tarea está en curso. Pueden trabajar una o dos personas en ella, pero no es prescriptivo. Cada miembro del equipo solo tiene dos imanes, por lo que solo puede encargarse de dos cosas a la vez. Típicamente, solo se encargará de una. El segundo imán se reserva para cuando tienes que ponerte a ayudar a alguien o a resolver un bug urgente y tienes que dejar bloqueada tu tarea principal.
