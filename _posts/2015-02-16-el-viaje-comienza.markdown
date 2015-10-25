@@ -3,7 +3,7 @@ author: dandel
 comments: true
 date: 2015-02-16T06:04:07.000Z
 layout: post
-slug: "el-viaje-comienza"
+slug: "Estoy en mi hotel en el centro de Oslo, son las 18:30 y estoy haciendo tiempo hasta la hora de cenar. Hoy he partido de casa en un viaje de aprendizaje que me llevará a visitar dos de las empresas del grupo Schibsted: finn.no y Tripwell."
 title: El viaje comienza
 wordpress_id: 3
 categories: 
