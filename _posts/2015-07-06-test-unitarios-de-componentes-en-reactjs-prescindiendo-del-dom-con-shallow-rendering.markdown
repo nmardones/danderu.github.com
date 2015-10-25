@@ -90,31 +90,6 @@ Esto nos dará un objeto similar al siguiente:
     }
 ```
 
-El cual podemos testear:
-
-```javascript 
-    expect(component.props.className).toBe('my-component');
-```
-
-El ejemplo anterior quedaría de la siguiente forma:
-
-```javascript   
-    import React from 'react';
-    import TestUtils from 'react/lib/ReactTestUtils';
-    import expect from 'expect';
-    import MyComponent from '../src/my-component';
-    
-    const shallowRenderer = TestUtils.createRenderer();
-    shallowRenderer.render(React.createElement(MyComponent));
-    const component = shallowRenderer.getRenderOutput();
-    
-    describe('my component test suite', function () {
-       it('renders properly', function() {
-          expect(component).toExist();
-       });
-    });
-```
-
 
 ##Referencias##
 
