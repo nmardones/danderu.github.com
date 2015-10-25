@@ -15,8 +15,6 @@ published: true
 excerpt: "Estoy en mi hotel en el centro de Oslo, son las 18:30 y estoy haciendo tiempo hasta la hora de cenar. Hoy he partido de casa en un viaje de aprendizaje que me llevará a visitar dos de las empresas del grupo Schibsted: finn.no y Tripwell."
 ---
 
-
-
 Estoy en mi hotel en el centro de Oslo, son las 18:30 y estoy haciendo tiempo hasta la hora de cenar. Hoy he partido de casa en un viaje de aprendizaje que me llevará a visitar dos de las empresas del grupo Schibsted: [finn.no](http://www.finn.no/) y [Tripwell](https://es.tripwell.com/). Esta mañana despedía de mi familia y le daba los últimos abrazos a mi hija de dos años con un nudo en la garganta. Iba a estar tres semanas sin verlas y se me hacia muy duro separarme de ellas. Sólo me consolaba pensar en lo que espero de este periplo.
 
 Más tarde, ya en el avión, aproveché esas horas de soledad y tranquilidad que no conseguía desde que nació Emma para comenzar a leer "[The Software Craftsman](http://www.amazon.com/The-Software-Craftsman-Professionalism-Pragmatism/dp/0134052501)", de Sandro Mancuso. Una de las personas más inspiradoras que he tenido el honor de conocer. Y precisamente en este libro, he encontrado verbalizado el sentimiento que me ha llevado a emprender esta aventura.
@@ -25,7 +23,7 @@ Más tarde, ya en el avión, aproveché esas horas de soledad y tranquilidad que
 
 ¿Qué es un programador senior? Tal y como se entiende aún en muchas empresas, el nivel senior para un programador es un status al que se aspira llegar tan solo adquiriendo _antigüedad_. Una etiqueta que te corresponde por hacer tu trabajo bien durante un tiempo determinado. Y transcurrido ese tiempo, pasas a ser automáticamente **senior **(maduro). No obstante, tal y como Mancuso señala en su libro:
 
-<blockquote>No es lo mismo diez años de experiencia que un año de experiencia repetido diez veces</blockquote>
+> No es lo mismo diez años de experiencia que un año de experiencia repetido diez veces
 
 Hoy en día hay tantas formas de trabajar, tantas técnicas, lenguajes, dinámicas, procesos y estrategias que resulta imposible que las puedas conocer todas permaneciendo en tu mismo puesto de trabajo. Y aunque las conozcas, es difícil aplicarlas. Lo ideal es moverte, ir cambiando de trabajo o incluso viajar, para adquirir esa experiencia que solo se consigue viendo mundo.
 

@@ -16,8 +16,6 @@ Mi primer día en **Finn** comenzó tras un opíparo desayuno para cargar pilas.
 
 Nada más salir a la calle el clima escandinavo me recibió con un buen guantazo en los morros y algunos copos de nieve. Por suerte, las oficinas de Finn se encontraban cerca y no tuve tiempo ni a fijarme demasiado en el barrio. Aún así reparé en que el grupo Schibsted tiene varias oficinas en esta zona, aparte de las de Finn.
 
-<!-- more -->
-
 A pesar de que las oficinas de Finn se encuentran en un edificio que desde fuera parece bastante antiguo, al subir a la recepción mi percepción cambió completamente. Las oficinas estaban decoradas con muy buen gusto, con rincones temáticos llenos de personalidad. El detalle es que todo el mobiliario y la decoración lo constituyen artículos que se han comprado en Finn.
 
 Pregunté en recepción por quien iba a ser mi _cicerone _durante mi estancia en Finn: Marthe Slaatsveen. Enseguida vino a recibirme y me presentó al resto del equipo, el Team SOA. Algo así como (espero escribirlo bien) Søk og Annonser, búsqueda y anuncios. La responsabilidad de este equipo es precisamente esa: se ocupan de la búsqueda de anuncios en el portal.
