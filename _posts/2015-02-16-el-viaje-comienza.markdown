@@ -3,7 +3,7 @@ author: dandel
 comments: true
 date: 2015-02-16T06:04:07.000Z
 layout: post
-slug: "Estoy en mi hotel en el centro de Oslo, son las 18:30 y estoy haciendo tiempo hasta la hora de cenar. Hoy he partido de casa en un viaje de aprendizaje que me llevará a visitar dos de las empresas del grupo Schibsted: finn.no y Tripwell."
+slug: "el-viaje-comienza"
 title: El viaje comienza
 wordpress_id: 3
 categories: 
@@ -12,8 +12,9 @@ tags:
   - agile
   - software craftsmanship
 published: true
-excerpt: bla bla bla
+excerpt: "Estoy en mi hotel en el centro de Oslo, son las 18:30 y estoy haciendo tiempo hasta la hora de cenar. Hoy he partido de casa en un viaje de aprendizaje que me llevará a visitar dos de las empresas del grupo Schibsted: finn.no y Tripwell."
 ---
+
 
 
 Estoy en mi hotel en el centro de Oslo, son las 18:30 y estoy haciendo tiempo hasta la hora de cenar. Hoy he partido de casa en un viaje de aprendizaje que me llevará a visitar dos de las empresas del grupo Schibsted: [finn.no](http://www.finn.no/) y [Tripwell](https://es.tripwell.com/). Esta mañana despedía de mi familia y le daba los últimos abrazos a mi hija de dos años con un nudo en la garganta. Iba a estar tres semanas sin verlas y se me hacia muy duro separarme de ellas. Sólo me consolaba pensar en lo que espero de este periplo.
