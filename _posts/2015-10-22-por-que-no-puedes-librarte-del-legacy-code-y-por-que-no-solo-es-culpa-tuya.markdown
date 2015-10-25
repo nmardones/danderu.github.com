@@ -1,7 +1,7 @@
 ---
 author: dandel
 comments: true
-date: 2015-10-22T06:37:11.000Z
+date: {}
 layout: post
 slug: "por-que-no-puedes-librarte-del-legacy-code-y-por-que-no-solo-es-culpa-tuya"
 title: Por qué no puedes librarte del legacy code y por qué no (solo) es culpa tuya
@@ -12,53 +12,29 @@ published: true
 excerpt: "Si estás leyendo esto, probablemente sufres en tus carnes cada día la problemática de trabajar con código\__legacy_, o código legado. Y digo que la sufres, porque eres consciente del problema, de que tiene solución y no estás cómodo con el status quo actual."
 ---
 
-Si estás leyendo esto, probablemente sufres en tus carnes cada día la problemática de trabajar con código _legacy_, o código legado. Y digo que la sufres, porque eres consciente del problema, de que tiene solución y no estás cómodo con el status quo actual. Sabes que te deberías librar de ese problema pero, ¿por qué no lo haces? Déjame intentar adivinarlo: porque no puedes.
 
+Si estás leyendo esto, probablemente sufres en tus carnes cada día la problemática de trabajar con código _legacy_, o código legado. Y digo que la sufres, porque eres consciente del problema, de que tiene solución y no estás cómodo con el status quo actual. Sabes que te deberías librar de ese problema pero, ¿por qué no lo haces? Déjame intentar adivinarlo: porque no puedes.
 
 El problema con el _legacy code _está en el nombre. Incluso en la definición de Michael Feathers, que seguro que habrás leído millones de veces:
 
-
-<blockquote>Legacy code is code without tests</blockquote>
-
+> Legacy code is code without tests
 
 Esta sentencia, tan breve como lapidaria, si se utiliza fuera de contexto puede ser aún más peligrosa que el código al que te enfrentas cada día. La frase tiene sentido en el momento en que te lees su maravilloso libro: **[Working Effectively with Legacy Code](http://www.amazon.com/Working-Effectively-Legacy-Robert-Martin-ebook/dp/B005OYHF0A/ref=mt_kindle?_encoding=UTF8&me=)** (el cual te recomiendo, si no lo has leído ya). Pero no se puede ser tan cándido como para deducir a partir de ella que la solución al problema de trabajar con legacy code es cubrirlo de tests.
 
 Es fácil llegar a esta conclusión, cuando empiezas a buscar soluciones y lees a gente como Feathers, o Uncle Bob. Este último, al que respeto enormemente, se quedó bien a gusto cuando enunció las tres reglas del TDD:
 
-
-<blockquote>
-
-> 
-> 
-	
->   1. You are not allowed to write any production code unless it is to make a failing unit test pass.
-> 
-	
->   2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
-> 
-	
->   3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
-> 
-
-</blockquote>
-
+> 1. You are not allowed to write any production code unless it is to make a failing unit test pass.
+2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
+3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
 
 Y con esto, dio por terminado el día. Se grabó en video, lo colgó en su web y se fue a leer en su sofá en bata esperando a ver cómo su cuenta corriente estaba rebosante por la mañana gracias a los pagos de sus subscriptores. Una vez más, las tres reglas del TDD no son leyes universales que se puedan aplicar en cualquier contexto. Son reglas que funcionan genial cuando estás construyendo una aplicación o funcionalidad nueva ya que el desarrollo orientado a tests te ayuda a resolver problemas de forma metódica y a documentar tu código. Pero si pretendes resolver un problema de una aplicación legacy cubriéndola de tests, cuando termines, probablemente tengas dos problemas.
 
-
 ## La cobertura de test no soluciona un problema de arquitectura de software
-
 
 Llevo algo más de un año aplicando TDD a mis desarrollos sobre una plataforma que tiene más de nueve años y sobre otra de casi cinco años. Ambas tienen problemas, sobre todo de acotación de contextos, no hay _single responsibility_, no hay interfaces, acoplamiento entre lógica de negocio y presentación, código spaghetti... todo lo que te puedas imaginar y más. Seguro que te suena. En un escenario así, para cubrir de test tienes dos opciones:
 
-
-
-	
   1. Refactorizar a lo bestia código que no es tuyo, que no está documentado y que no está cubierto de test, incumpliendo las tres reglas de Uncle Bob.
-
-	
   2. Cubrir de tests de integración la funcionalidad básica de tu aplicación, para garantizar que, en caso de romper algo refactorizando, no sea algo demasiado importante y el core de tu negocio permanezca intacto.
-
 
 La opción (1) implica una inversión de tiempo de investigación y definición de arquitectura importante, porque es difícil cubrir de tests unitarios un código que no ha sido diseñado para ser testado. Difícil, pero no imposible. Aunque con ciertos límites. Si un método tiene 100 líneas de código, puedes llegar a asumir un refactoring que te puede llevar un par de días. Pero si estamos hablando de clases de 10.000 líneas de código con reglas de negocio de hace más de cinco años que no están documentadas en ninguna parte... el tiempo necesario para refactorizar eso es inasumible y vale más la pena tirarlo y hacerlo de cero.
 
@@ -74,15 +50,11 @@ Tal vez pensarás que deberíamos haber optado por la opción (1), aunque nos hu
 
 **El problema es que estábamos solos intentando solucionando un problema que es de toda la compañía.**
 
-
 ## No se puede cambiar el motor de un Ferrari mientras corre a 200Km/h
-
 
 Decía un párrafo que el problema con el _legacy code_es el nombre. Yo eliminaría la palabra _code_ de la definición y lo dejaría en _legacy. _Porque si le empiezas a explicar a tu product manager o al CEO de la compañía que tienes problemas con el legacy **code**, mientras estés pronunciando la siguiente frase estará pensando:
 
-
-<blockquote>¿Tiene problemas con el código? Pues que lo arregle, ¿a mí que me cuenta?</blockquote>
-
+> ¿Tiene problemas con el código? Pues que lo arregle, ¿a mí que me cuenta?
 
 Nuestros problemas no vienen por el código legado. Vienen por las reglas de negocio del producto legado. Si fuera tan famoso como Bob Martin y toda esta gente que tanto me ha inspirado, empezaría a acuñar el término **legacy product **y evitaría mencionar la palabra "código" cada vez que intentase hablarle a alguien del problema.
 
@@ -100,9 +72,7 @@ Todos estos problemas, no son problemas del código. Son problemas del producto 
 
 Y si se hace, al menos estaría genial no poner palos en la rueda del que intenta salvarte el culo.
 
-
 ## Conclusión
-
 
 De verdad, me encantaría acuñar el término **legacy product**. Creo que libros como Clean Code deberían leérselo todas las personas de la compañía, no solo los devs que lloran sangre cada día mientras les piden explicaciones sobre por qué les cuesta tanto cambiar una plantilla de email y ponerla en producción. O sobre por qué después de cada release se tienen que invertir cuatro días solucionando bugs.
 
