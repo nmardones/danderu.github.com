@@ -1,17 +1,20 @@
 ---
 author: dandel
 comments: true
-date: 2015-04-01 20:33:36+00:00
+date: 2015-04-01T20:33:36.000Z
 layout: post
-slug: una-anecdota-sobre-mi-primer-minimum-viable-product
+slug: "una-anecdota-sobre-mi-primer-minimum-viable-product"
 title: Una anécdota sobre mi primer Minimum Viable Product
 wordpress_id: 150
-categories:
-- Journey
-tags:
-- lean
-- MVP
+categories: 
+  - Journey
+tags: 
+  - lean
+  - MVP
+published: true
+excerpt: "El otro día David García (@d4vecarter) me explicaba una anécdota de su primer trabajo y me hizo recordar otra que me ocurrió a mi, también en mi primera experiencia profesional."
 ---
+
 
 El otro día [@d4vecarter](https://twitter.com/d4vecarter) me explicaba una anécdota de su primer trabajo y me hizo recordar otra que me ocurrió a mi, también en mi primera experiencia profesional. Fue en una conocida cadena de supermercados, donde trabajaba los veranos como reponedor. Entré a trabajar a través de la típica ETT junto con otros cuatro chavales. Tenía claro que no iba a ser el trabajo de mi vida, puesto que en septiembre empezaría a estudiar la carrera para convertirme en un hombre de provecho. Quién me iba a decir a mi que acabaría siendo un _desgraciao_. Pero eso es otra historia.
 

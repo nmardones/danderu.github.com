@@ -1,16 +1,16 @@
 ---
 author: dandel
 comments: true
-date: 2015-10-22 06:37:11+00:00
+date: 2015-10-22T06:37:11.000Z
 layout: post
-slug: por-que-no-puedes-librarte-del-legacy-code-y-por-que-no-solo-es-culpa-tuya
+slug: "por-que-no-puedes-librarte-del-legacy-code-y-por-que-no-solo-es-culpa-tuya"
 title: Por qué no puedes librarte del legacy code y por qué no (solo) es culpa tuya
 wordpress_id: 187
-categories:
-- Journey
+categories: 
+  - Journey
+published: true
+excerpt: "Si estás leyendo esto, probablemente sufres en tus carnes cada día la problemática de trabajar con código\__legacy_, o código legado. Y digo que la sufres, porque eres consciente del problema, de que tiene solución y no estás cómodo con el status quo actual."
 ---
-
-[![Death March](https://thecraftsmansjourney.files.wordpress.com/2015/10/ww2-131.jpg)](https://thecraftsmansjourney.files.wordpress.com/2015/10/ww2-131.jpg)
 
 Si estás leyendo esto, probablemente sufres en tus carnes cada día la problemática de trabajar con código _legacy_, o código legado. Y digo que la sufres, porque eres consciente del problema, de que tiene solución y no estás cómodo con el status quo actual. Sabes que te deberías librar de ese problema pero, ¿por qué no lo haces? Déjame intentar adivinarlo: porque no puedes.
 

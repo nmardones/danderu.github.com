@@ -1,14 +1,17 @@
 ---
 author: dandel
 comments: true
-date: 2015-02-20 10:19:22+00:00
+date: 2015-02-20T10:19:22.000Z
 layout: post
-slug: unleash-feature-toggle-service
-title: 'Unleash: a feature toggle service'
+slug: "unleash-feature-toggle-service"
+title: "Unleash: a feature toggle service"
 wordpress_id: 76
-categories:
-- Journey
+categories: 
+  - Journey
+published: true
+excerpt: "Ayer descubrí otra herramienta estupenda que utilizan aquí:\_Unleash. Se trata de un servicio que permite activar o desactivar funcionalidades en producción mediante una página de administración"
 ---
+
 
 Ayer descubrí otra herramienta estupenda que utilizan aquí: **[Unleash](https://github.com/finn-no/unleash)**. Se trata de un servicio que permite activar o desactivar funcionalidades en producción mediante una página de administración. Ha sido desarrollada internamente, pero el código es open source, así que la puede utilizar cualquiera. También tienen liberado un [cliente para Java](https://github.com/finn-no/unleash-client-java).
 
