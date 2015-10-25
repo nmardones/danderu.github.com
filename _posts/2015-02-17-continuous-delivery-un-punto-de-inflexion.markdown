@@ -23,12 +23,12 @@ Esperaba encontrarme algo muy sofisticado, una forma de trabajar que mi nivel de
 Su tablón es de tipo kanban, con varias columnas que reflejan su proceso de trabajo, que es el siguiente:
 
 ---
-ToDo
-In Progress
-Code Review
-Test
-Done
-Production
+ToDo:
+In Progress:
+Code Review:
+Test:
+Done:
+Production:
 ---
 
   * **ToDo**: Las historias de usuario entran ya priorizadas en esta columna. Tanto historias de producto como historias de "mantenimiento". Los bugs, siempre entran con la prioridad máxima, arriba de todo. La prioridad es descendiente de arriba a abajo. Más adelante me detendré a hablar de cómo asignan prioridades.
