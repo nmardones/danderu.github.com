@@ -17,6 +17,7 @@ published: true
 excerpt: En este post explico cómo implementar tests unitarios sobre tus componentes de UI utilizando shallow rendering.
 ---
 
+
 En un [artículo](https://thecraftsmansjourney.wordpress.com/2015/06/18/configurando-un-entorno-en-webpack-para-trabajar-con-react/) publicado previamente hablé sobre el entorno que hemos preparado para desarrollar componentes atómicos con **ReactJS** y de todas las micro-decisiones que hemos tomado sobre el mismo. Con lo que respecta a los tests unitarios, hasta ahora hemos utilizado [Karma](http://karma-runner.github.io/0.12/index.html) debido a su compatibilidad con [webpack](http://webpack.github.io) y su facilidad de configuración, pero este mundo evoluciona muy rápido y ya hemos encontrado una opción mejor: implementar [**shallow rendering**](https://facebook.github.io/react/docs/test-utils.html#shallow-rendering). Esta opción además, es la [recomendada por Facebook](https://discuss.reactjs.org/t/whats-the-prefered-way-to-test-react-js-components/26/2) a partir de la versión 0.13, así que no se puede estar más a la última.
 
 ```javascript
@@ -114,27 +115,6 @@ El ejemplo anterior quedaría de la siguiente forma:
     });
 ```
 
-A partir de aquí, podemos ejecutar la batería de test simplemente con mocha (por ejemplo), utilizando [BabelJS](https://babeljs.io) como transpiler. Para ello, hemos añadido los dos siguientes scripts a nuestro `package.json`:
-
-```javascript
-    "test": "mocha --compilers js:babel/register --recursive",
-    "test:watch": "npm run test -- -w test src --watch-extensions jsx"
-```
-
-La primera línea ejecuta los tests con mocha una vez, buscando por defecto en la carpeta `./test` de nuestra app y de forma recursiva en todas las sub-carpetas. La segunda línea levanta un entorno de TDD que relanza los tests ante cualquier cambio tanto en nuestra carpeta de tests como en nuestra carpeta de código fuente, en la que tenemos todos los componentes con extensión `.jsx` Esto nos permitirá prescindir de Karma y de todas las dependencias necesarias, así como de PhantomJS. En nuestro caso, nos hemos librado de los siguientes packages:
-
-```javascript
-    "karma": "^0.12.33",		
-    "karma-chrome-launcher": "^0.1.12",		
-    "karma-cli": "0.0.4",		
-    "karma-mocha": "^0.1.10",		
-    "karma-phantomjs-launcher": "^0.1.4",		
-    "karma-spec-reporter": "0.0.19",		
-    "karma-webpack": "^1.5.1",
-    "phantomjs-polyfill": "0.0.1"
-```
-
-Consiguiendo como bonus un entorno de TDD aún más rápido que la configuración anterior. WIN-WIN :) 
 
 ##Referencias##
 
