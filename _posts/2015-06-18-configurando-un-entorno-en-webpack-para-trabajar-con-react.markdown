@@ -1,22 +1,25 @@
 ---
 author: dandel
 comments: true
-date: 2015-06-18 10:06:56+00:00
+date: 2015-06-18T10:06:56.000Z
 layout: post
-slug: configurando-un-entorno-en-webpack-para-trabajar-con-react
+slug: "configurando-un-entorno-en-webpack-para-trabajar-con-react"
 title: Configurando un entorno en Webpack para trabajar con React
 wordpress_id: 156
-categories:
-- Frontend
-tags:
-- Babel
-- ES6
-- karma
-- mocha
-- node
-- React
-- Webpack
+categories: 
+  - Frontend
+tags: 
+  - Babel
+  - ES6
+  - karma
+  - mocha
+  - node
+  - React
+  - Webpack
+published: true
+excerpt: En este post explico el entorno de trabajo que utilizamos en Schibsted Spain para trabajar con React
 ---
+
 
 Tengo la inmensa suerte de estar trabajando desde hace un mes y medio con [@d4vecarter](https://twitter.com/d4vecarter) y [@carlosvillu](https://twitter.com/carlosvillu) en un equipo en el que estoy aprendiendo decenas de cosas nuevas cada día. La tecnología que estamos utilizando es [React](http://facebook.github.io/react/), la librería de javascript mas _trendy_ del momento.
 
