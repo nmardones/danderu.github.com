@@ -20,42 +20,23 @@ Mis primeras conversaciones con Marthe fueron dirigidas a la forma de trabajar d
 
 Esperaba encontrarme algo muy sofisticado, una forma de trabajar que mi nivel de inmadurez no me permitiese ni siquiera imaginar, pero nada más lejos de la realidad. Al ver su tablón, me encontré con algo tan sencillo que mi primera reacción fue de sorpresa. Y la siguiente de vergüenza, al darme cuenta de que todo es mucho más sencillo de lo que parece y nosotros muchas veces lo complicamos innecesariamente.
 
-<!-- more -->
-
 Su tablón es de tipo kanban, con varias columnas que reflejan su proceso de trabajo, que es el siguiente:
-<table >
 
-<tr >
+---
 ToDo
 In Progress
 Code Review
 Test
 Done
 Production
-</tr>
+---
 
-</table>
-
-
-
-	
   * **ToDo**: Las historias de usuario entran ya priorizadas en esta columna. Tanto historias de producto como historias de "mantenimiento". Los bugs, siempre entran con la prioridad máxima, arriba de todo. La prioridad es descendiente de arriba a abajo. Más adelante me detendré a hablar de cómo asignan prioridades.
-
-	
   * **In Progress**: La tarea está en curso. Pueden trabajar una o dos personas en ella, pero no es prescriptivo. Cada miembro del equipo solo tiene dos imanes, por lo que solo puede encargarse de dos cosas a la vez. Típicamente, solo se encargará de una. El segundo imán se reserva para cuando tienes que ponerte a ayudar a alguien o a resolver un bug urgente y tienes que dejar bloqueada tu tarea principal.
-
-	
   * **Code Review:** Trabajan con git y cada vez que quieren hacer push, automáticamente se crea un _pull request_, para que Tina (la Lead Developer) revise el código y proporcione el feedback oportuno. Me parece interesante que esta fase esté incrustada dentro del flujo de trabajo de las tareas de forma ineludible.
-
-	
   * **Test**: Tengo que explorar un poco más sobre esto, pero tengo la impresión de que no hacen TDD, sino que hacen testing manual al final del proceso. Escriben tests automáticos, pero si me tengo que fiar de lo que refleja el tablón, no los hacen al principio. Esto me hace pensar que aquí quizás podría aportar algo al equipo.
-
-	
   * **Done: **Tarea terminada y pendiente de subir a producción.
-
-	
   * **Production: **En producción.
-
 
 Fijaos que no tienen columnas de _fires _ni _prios_. Otro de los habituales en nuestras pizarras, un síntoma de que hay algo en nuestros procesos e infraestructuras que no funciona demasiado bien.
 
