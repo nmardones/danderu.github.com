@@ -18,11 +18,7 @@ Tripwell es una startup dedicada a alquiler vacacional creada dentro del grupo S
 
 A pesar de todo, es interesante ver cómo ellos mismos reconocen que al principio cometieron los mismos errores que cualquier podría cometer emprendedor sin esos padrinos cubriéndoles las espaldas.
 
-<!-- more -->
-
-
 ## Historia de un MVP
-
 
 Comenzaron el proyecto dos personas, para definir el producto, modelo de negocio e infraestructura técnica. Poco a poco fueron incorporando algunas pocas personas más, pero no muchas. Después de varios meses, con una idea ya en la cabeza, empezaron a desarrollar y tirar líneas de código. Decidieron externalizar la parte de diseño y frontend a otra empresa, a la que básicamente le pidieron un clon de airbnb.
 
@@ -34,48 +30,25 @@ Tripwell salió a la luz antes de la fecha estimada, con un producto simple pero
 
 Actualmente tienen un producto funcionando sobre el que ir iterando y añadiendo o modificando funcionalidades en función de lo que los usuarios necesitan. Con más de 19.000 anuncios en su base de datos disponibles para alquilar con seguridad, su foco ahora mismo es el crecimiento, más que evolucionar el producto. Quieren aprovechar las sinergias que se pueden crear con otros portales del grupo alrededor del mundo para expandirse y aumentar su volumen de contenido. A su vez, están constantemente midiendo y testeando la experiencia de usuario en el portal y puede que esto les lleve a proponer un cambio radical en el proceso de reserva que ningún otro portal ha planteado.
 
-
 ## Build a cupcake
-
 
 Un buen resumen de lo que han aprendido en todo el proceso es lo que explicaba Des Traynor de Intercom en el Web Summit de Dublin de este año. Cuando crees un producto, **build a cupcake, not a wedding cake.**
 
 [![wedding_cake](https://thecraftsmansjourney.files.wordpress.com/2015/03/wedding_cake-e1425620627576.png)](https://thecraftsmansjourney.files.wordpress.com/2015/03/wedding_cake-e1425620627576.png)
 
-
-
 Si quieres crear un pastel de bodas, un MVP no puede ser nunca la base del pastel, ya que ni siquiera se parece a un producto terminado. Es mejor empezar por una versión sencilla y fácil de producir del producto final, como una magdalena :)
 
 Estas son las principales ideas aprendidas por parte del equipo de Tripwell según su experiencia:
-
-
-
 	
   * Al comenzar un proyecto, asegúrate de definir un **MVP lo más ajustado posible**. Y cuando estés seguro de tenerlo, ajústalo aún un poco más.
-
-	
   * Al mismo tiempo que defines tu MVP, asegúrate de **definir las métricas** que te van a decir si tienes éxito, así como la forma de medirlas.
-
-	
   * Tras definir el MVP, testea y **valida tus ideas** con tests de usuario, usabilidad... etc. Aunque tengas un deadline ajustado, seguramente te ahorrará tiempo al final. Incluye una fase de testing en todas las etapas de tu hoja de ruta.
-
-	
   * Especialmente al principio, **concéntrate en construir las cosas correctas, más que en construirlas correctamente**. Cuando estén funcionando, podrás permitirte una etapa posterior para afinar, tunear y optimizar.
-
-	
   * Incluye **un perfil de UX en el equipo desde el principio**. Aunque externalices el diseño a otra empresa, es necesario tener a alguien con conocimientos de UX para testear y validar que todo se construye acorde con los objetivos que el producto pretende cubrir.
-
-	
   * Fomenta una **cultura inclusiva y participativa**, especialmente con los desarrolladores. Esto crea un sentimiento de responsabilidad sobre las funcionalidades que se están construyendo, que hace que cada miembro del equipo se motive y entienda mejor lo que está haciendo y qué sentido tiene.
-
-	
   * **Escucha a tus usuarios** a la hora de decidir los siguientes pasos y priorizar el trabajo que incluirás en tu hoja de ruta.
 
-
-
-
 ## Conclusiones
-
 
 Es muy interesante observar la transformación de la compañía, cómo aprendieron de sus errores y en poco tiempo han logrado un producto sencillo, atractivo y con un potencial de crecimiento muy a tener en cuenta. Comparándolos con Finn, su evolución hacia una cultura Lean ha sido tres veces más rápida, seguramente en gran parte debido al pequeño tamaño de la empresa. Pero a pesar de las distancias, la esencia de la forma de trabajar y de entregar valor es la misma en ambos mundos.
 
