@@ -19,17 +19,11 @@ Estas definiciones le restan importancia al papel de ReactJS dentro del stack de
 
 Imaginad el rechazo de la comunidad, a la que ya le cuesta aceptar que estilos, layout y comportamiento no tienen sentido por separado, si además descubren que ReactJS en realidad no solo está pensado para ser la vista, **sino también el controlador**.
 
-<!-- more -->
-
-
-<blockquote>WAT? React is the VC in MVC?</blockquote>
-
+> WAT? React is the VC in MVC?
 
 Sí... y no realmente. De hecho, los creadores enseguida se quisieron desmarcar del denostado patrón MVC, para proponer su propia arquitectura: [Flux](https://facebook.github.io/flux/). Parece que su estrategia con ReactJS es ir enseñando poco a poco el potencial de lo que han creado, para educar a la comunidad de frontend y cambiar progresivamente el _mindset_ general hacia un nuevo paradigma. Y poco a poco, nos vamos dando cuenta de que en realidad estamos ante una **herramienta de creación de UI universal**, que ha llegado para cambiar la filosofía con la que se construían webs hasta ahora. Sus puntos fuertes son la **composición, inmutabilidad, flujo de datos unidireccional, control absoluto sobre el estado y universalidad**.
 
-
-<blockquote>Entonces, ¿no necesitamos el DOM?</blockquote>
-
+> Entonces, ¿no necesitamos el DOM?
 
 Necesitamos un DOM virtual sobre el que renderizar componentes de React, para medios web, pero [React Native](https://facebook.github.io/react-native/) ya ha demostrado que se pueden crear aplicaciones con componentes sin utilizar el DOM en absoluto. Y ya hay por ahí alguna prueba de concepto de una aplicación renderizada en consola simplemente con una TUI (Text User Interface). Y es que ReactJS va mucho más allá de ser una librería para renderizar componentes DOM, es una herramienta para **construir interfaces de usuario**.
 
@@ -39,17 +33,10 @@ En la última actualización de la librería, la **[versión 0.14 beta 1](http:/
 
 El futuro de esta librería cada vez es más apasionante.
 
-**Referencias:**
+##Referencias:
 
-
-
-	
   * [You are missing the point of React](https://medium.com/@dan_abramov/youre-missing-the-point-of-react-a20e34a51e1a) - [@dan_abramov](https://twitter.com/dan_abramov?lang=es)
-
-	
   * [React 0.14 Beta 1](https://facebook.github.io/react/blog/2015/07/03/react-v0.14-beta-1.html)
-
-	
   * [@carlosvillu](https://twitter.com/carlosvillu) y su _evangelización persistente_ sobre el tema principal de este post :)
 
 
