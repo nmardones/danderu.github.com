@@ -16,8 +16,6 @@ Uno puede pensar que es genial que se aprueben este tipo de leyes, pero es una p
 
 **En España el 16,7% de la población adulta **(mayores de 15 años) sufre algún tipo de discapacidad temporal o permanente, [según el INE](http://noticias.universia.es/en-portada/noticia/2013/12/09/1068267/16-7-jovenes-adultos-espanoles-tiene-alguna-discapacidad.html). Esto significa que si nuestros portales no son accesibles, el 16,7% de personas no pueden encontrar la casa de sus sueños, un coche nuevo, un trabajo o un carrito para su hijo.
 
-<!-- more -->
-
 La discapacidad no es un problema en sí mismo, el problema son los obstáculos que ponemos los demás. Si pretendemos mejorar la vida de la gente, no podemos hacerlo poniendo obstáculos para algunos de ellos.
 
 Pensar en hacer un site accesible es un trabajo que se debe realizar desde el principio, y no se trata de aprenderse de memoria las reglas de la [WCAG 2.0](http://www.w3.org/TR/WCAG20/), sino de empezar realizando sencillos tests de accesibilidad antes de dar por terminada una implementación. Del mismo modo que probamos si algo funciona bien en varios navegadores o resoluciones, no estaría de más probar si el contenido es escalable, si se puede leer correctamente en modo de alto contraste, o si el asistente de lectura de contenido (tipo Voice Over) es capaz de leer correctamente las acciones importantes.
