@@ -40,56 +40,6 @@ Tal y como explico en mi [post](https://thecraftsmansjourney.wordpress.com/2015/
 
 Cojamos por ejemplo el test anterior. Por si solo no podría funcionar, ya que **depende** de Karma para levantar un browser que nos ofrezca un DOM sobre el que montar los componentes. En nuestro caso utilizábamos PhantomJS, que además requería de un [polyfill](https://www.npmjs.com/package/phantomjs-polyfill) para soportar algunas funciones que faltan. Pero podemos prescindir de él. Si miramos la [especificación](https://facebook.github.io/react/docs/test-utils.html#shallow-rendering) que nos da Facebook para utilizar _shallow rendering_, vemos que primero necesitamos instancia un _renderer_:
 
-```javascript
-    import React from 'react/addons';
-    const TestUtils = React.addons.TestUtils;
-    const shallowRenderer = TestUtils.createRenderer();
-```
-
-A continuación, debemos obtener un ReactElement, para poder acceder a sus propiedades y realizar los tests unitarios que deseemos. Hay dos formas de hacerlo, podemos renderizar nuestro componente utilizando sintaxis JSX:
-
-```javascript
-    shallowRenderer.render();
-```
-
-O mediante la utilidad `React.createElement`:
-
-```javascript 
-    shallowRenderer.render(React.createElement(MyComponent));
-```
-
-A partir de este punto, ya podemos obtener el componente:
-
-```javascript
-    const component = shallowRenderer.getRenderOutput();
-```    
-
-Esto nos dará un objeto similar al siguiente:
-
-```javascript
-    {
-      "type": "article",
-      "_store": {
-        "props": {
-          "className": "my-component",
-          "children": [{
-            "type": "h1",
-            "_store": {
-              "props": {
-                "className": "my-component__title",
-                "children": "Title"
-              },
-              "originalProps": {
-                "className": "my-component__title",
-                "children": "Title"
-              }
-            }
-          }]
-        }
-      }
-    }
-```
-
 
 ##Referencias##
 
