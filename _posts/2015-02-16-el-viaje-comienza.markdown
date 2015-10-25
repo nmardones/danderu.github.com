@@ -1,7 +1,7 @@
 ---
 author: dandel
 comments: true
-date: {}
+date: 2015-02-16T06:04:07.000Z
 layout: post
 slug: "el-viaje-comienza"
 title: El viaje comienza
@@ -12,6 +12,7 @@ tags:
   - agile
   - software craftsmanship
 published: true
+excerpt: bla bla bla
 ---
 
 
