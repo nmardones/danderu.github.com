@@ -15,7 +15,7 @@ excerpt: "Si estás leyendo esto, probablemente sufres en tus carnes cada día l
 
 Si estás leyendo esto, probablemente sufres en tus carnes cada día la problemática de trabajar con código _legacy_, o código legado. Y digo que la sufres, porque eres consciente del problema, de que tiene solución y no estás cómodo con el status quo actual. Sabes que te deberías librar de ese problema pero, ¿por qué no lo haces? Déjame intentar adivinarlo: porque no puedes.
 
-El problema con el _legacy code _está en el nombre. Incluso en la definición de Michael Feathers, que seguro que habrás leído millones de veces:
+El problema con el _legacy code_ está en el nombre. Incluso en la definición de Michael Feathers, que seguro que habrás leído millones de veces:
 
 > Legacy code is code without tests
 
@@ -33,8 +33,8 @@ Y con esto, dio por terminado el día. Se grabó en video, lo colgó en su web y
 
 Llevo algo más de un año aplicando TDD a mis desarrollos sobre una plataforma que tiene más de nueve años y sobre otra de casi cinco años. Ambas tienen problemas, sobre todo de acotación de contextos, no hay _single responsibility_, no hay interfaces, acoplamiento entre lógica de negocio y presentación, código spaghetti... todo lo que te puedas imaginar y más. Seguro que te suena. En un escenario así, para cubrir de test tienes dos opciones:
 
-  1. Refactorizar a lo bestia código que no es tuyo, que no está documentado y que no está cubierto de test, incumpliendo las tres reglas de Uncle Bob.
-  2. Cubrir de tests de integración la funcionalidad básica de tu aplicación, para garantizar que, en caso de romper algo refactorizando, no sea algo demasiado importante y el core de tu negocio permanezca intacto.
+1. Refactorizar a lo bestia código que no es tuyo, que no está documentado y que no está cubierto de test, incumpliendo las tres reglas de Uncle Bob.
+2. Cubrir de tests de integración la funcionalidad básica de tu aplicación, para garantizar que, en caso de romper algo refactorizando, no sea algo demasiado importante y el core de tu negocio permanezca intacto.
 
 La opción (1) implica una inversión de tiempo de investigación y definición de arquitectura importante, porque es difícil cubrir de tests unitarios un código que no ha sido diseñado para ser testado. Difícil, pero no imposible. Aunque con ciertos límites. Si un método tiene 100 líneas de código, puedes llegar a asumir un refactoring que te puede llevar un par de días. Pero si estamos hablando de clases de 10.000 líneas de código con reglas de negocio de hace más de cinco años que no están documentadas en ninguna parte... el tiempo necesario para refactorizar eso es inasumible y vale más la pena tirarlo y hacerlo de cero.
 
@@ -52,11 +52,11 @@ Tal vez pensarás que deberíamos haber optado por la opción (1), aunque nos hu
 
 ## No se puede cambiar el motor de un Ferrari mientras corre a 200Km/h
 
-Decía un párrafo que el problema con el _legacy code_es el nombre. Yo eliminaría la palabra _code_ de la definición y lo dejaría en _legacy. _Porque si le empiezas a explicar a tu product manager o al CEO de la compañía que tienes problemas con el legacy **code**, mientras estés pronunciando la siguiente frase estará pensando:
+Decía un párrafo que el problema con el _legacy code_ es el nombre. Yo eliminaría la palabra _code_ de la definición y lo dejaría en _legacy_. Porque si le empiezas a explicar a tu product manager o al CEO de la compañía que tienes problemas con el legacy **code**, mientras estés pronunciando la siguiente frase estará pensando:
 
 > ¿Tiene problemas con el código? Pues que lo arregle, ¿a mí que me cuenta?
 
-Nuestros problemas no vienen por el código legado. Vienen por las reglas de negocio del producto legado. Si fuera tan famoso como Bob Martin y toda esta gente que tanto me ha inspirado, empezaría a acuñar el término **legacy product **y evitaría mencionar la palabra "código" cada vez que intentase hablarle a alguien del problema.
+Nuestros problemas no vienen por el código legado. Vienen por las reglas de negocio del producto legado. Si fuera tan famoso como Bob Martin y toda esta gente que tanto me ha inspirado, empezaría a acuñar el término **legacy product** y evitaría mencionar la palabra "código" cada vez que intentase hablarle a alguien del problema.
 
 El **legacy product no te permite ser ágil**. El tiempo que inviertes en tareas que no están directamente relacionadas con el desarrollo puro de tu producto te hace perder ventaja competitiva con tus rivales del mercado. Mientras tú inviertes tiempo solucionando bugs, deployando en producción, levantando un entorno en local o tratando de entender reglas de negocio no documentadas; la startup de turno te está adelantando por la derecha con su plataforma recién salida de fábrica.
 
@@ -64,7 +64,7 @@ El **legacy product** te ata a tus clientes actuales. Me he encontrado casos d
 
 El **legacy product** no te permite tomar datos. Si lo hicieras, sabrías qué funcionalidades de tu aplicación se usan y qué otras no. Dónde pierdes clientes. Qué flujos de tu aplicación no están bien pensados y hay que redefinir. Si el coste de implementación de una plataforma de medición e instrumentacación de tu producto es tan elevado que no puedes hacerlo sin miedo a romper nada, necesitas otro producto. Si no puedes probar fácilmente un cambio en la experiencia de usuario o en el diseño con un conjunto reducido de tus usuarios sin tener que hacer un pase a producción o sin la intervención de un desarrollador, necesitas otro producto.
 
-El mantenimiento de tu **legacy product **te está haciendo perder dinero. Si un ingeniero de front end no puede desarrollar sin la ayuda de un back end, estás invirtiendo más recursos de los que necesitas. ¿Cuánto tiempo dedican tus desarrolladores a tareas no directamente relacionadas con la funcionalidad que se quiere poner en producción? Tradúcelo en horas. Luego, en dinero.
+El mantenimiento de tu **legacy product** te está haciendo perder dinero. Si un ingeniero de front end no puede desarrollar sin la ayuda de un back end, estás invirtiendo más recursos de los que necesitas. ¿Cuánto tiempo dedican tus desarrolladores a tareas no directamente relacionadas con la funcionalidad que se quiere poner en producción? Tradúcelo en horas. Luego, en dinero.
 
 Todos estos problemas, no son problemas del código. Son problemas del producto y por lo tanto, de la empresa. No se puede tratar de resolver un problema del producto desde el departamento de IT mientras el departamento de producto presiona para sacar su funcionalidad nueva antes del próximo Q, el de marketing quiere su rediseño de cara a la próxima campaña de publicidad en medios y el CEO llega un día con una integración de un cliente importantísimo que se tiene que hacer para ayer.
 
@@ -76,6 +76,6 @@ Y si se hace, al menos estaría genial no poner palos en la rueda del que intent
 
 De verdad, me encantaría acuñar el término **legacy product**. Creo que libros como Clean Code deberían leérselo todas las personas de la compañía, no solo los devs que lloran sangre cada día mientras les piden explicaciones sobre por qué les cuesta tanto cambiar una plantilla de email y ponerla en producción. O sobre por qué después de cada release se tienen que invertir cuatro días solucionando bugs.
 
-Tú, como ingeniero/a de software, tienes de sobras el conocimiento necesario para diseñar una arquitectura sólida, escalable y mantenible. Bien documentada y cubierta de tests. Ya te has leído todos esos libros y practicado tus katas. Pero si no lo haces, no es porque no quieras. Tienes que encontrar la forma de hacer entender a toda la gente que te rodea que **la empresa tiene un problema **y que es responsabilidad de todos encontrar la manera de solucionarlo.
+Tú, como ingeniero/a de software, tienes de sobras el conocimiento necesario para diseñar una arquitectura sólida, escalable y mantenible. Bien documentada y cubierta de tests. Ya te has leído todos esos libros y practicado tus katas. Pero si no lo haces, no es porque no quieras. Tienes que encontrar la forma de hacer entender a toda la gente que te rodea que **la empresa tiene un problema** y que es responsabilidad de todos encontrar la manera de solucionarlo.
 
 A lo mejor, lo más sensato es dejar al Ferrari corriendo a 200Km/h mientras construyes uno nuevo que lo sustituya en un futuro. Si decidís no hacerlo, no importa. Ya lo está haciendo vuestra competencia.
