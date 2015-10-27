@@ -52,7 +52,7 @@ Tal vez pensarás que deberíamos haber optado por la opción (1), aunque nos hu
 
 ## No se puede cambiar el motor de un Ferrari mientras corre a 200Km/h
 
-Decía un párrafo que el problema con el _legacy code_ es el nombre. Yo eliminaría la palabra _code_ de la definición y lo dejaría en _legacy_. Porque si le empiezas a explicar a tu product manager o al CEO de la compañía que tienes problemas con el legacy **code**, mientras estés pronunciando la siguiente frase estará pensando:
+Decía en un párrafo anterior que el problema con el _legacy code_ es el nombre. Yo eliminaría la palabra _code_ de la definición y lo dejaría en _legacy_. Porque si le empiezas a explicar a tu product manager o al CEO de la compañía que tienes problemas con el legacy **code**, mientras estés pronunciando la siguiente frase estará pensando:
 
 > ¿Tiene problemas con el código? Pues que lo arregle, ¿a mí que me cuenta?
 
